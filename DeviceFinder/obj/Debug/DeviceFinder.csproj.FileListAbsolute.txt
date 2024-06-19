@@ -1,0 +1,10 @@
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\obj\Debug\DeviceFinder.csproj.AssemblyReference.cache
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\obj\Debug\DeviceFinder.Properties.Resources.resources
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\obj\Debug\DeviceFinder.csproj.GenerateResource.cache
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\obj\Debug\DeviceFinder.csproj.CoreCompileInputs.cache
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\obj\Debug\DeviceFinder.Form1.resources
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\bin\Debug\DeviceFinder.exe.config
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\bin\Debug\DeviceFinder.exe
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\bin\Debug\DeviceFinder.pdb
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\obj\Debug\DeviceFinder.exe
+C:\Users\christopher.bleakley\source\repos\DeviceFinder\DeviceFinder\obj\Debug\DeviceFinder.pdb

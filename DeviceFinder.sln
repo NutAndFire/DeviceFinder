@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceFinder", "DeviceFinder\DeviceFinder.csproj", "{CBB6D376-A418-410E-8ED6-806E3E8579EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB6D376-A418-410E-8ED6-806E3E8579EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB6D376-A418-410E-8ED6-806E3E8579EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB6D376-A418-410E-8ED6-806E3E8579EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB6D376-A418-410E-8ED6-806E3E8579EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C16B829C-35C9-4B72-9E52-9D7DB5C20794}
+	EndGlobalSection
+EndGlobal
