@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Net.NetworkInformation;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
@@ -184,11 +185,15 @@ namespace DeviceFinder
         public Form1()
         {
             InitializeComponent();
+
+            dataGridViewResults.ColumnCount = 3;
+            dataGridViewResults.Columns[0].Name = "IP Address";
+            dataGridViewResults.Columns[1].Name = "MAC Address";
+            dataGridViewResults.Columns[2].Name = "Manufacturer";
         }
 
         private void Start_Click(object sender, EventArgs e)
-        {
-            richTextBoxResults.Clear();
+        {            
             ipMacList.Clear();
 
             string userIPAddr = textBoxIpInput.Text;
@@ -201,7 +206,7 @@ namespace DeviceFinder
             }
             else
             {
-                richTextBoxResults.AppendText("Please enter a valid CIDR notation (e.g., 10.1.0.0/24).");
+                
             }
         }
 
@@ -292,6 +297,8 @@ namespace DeviceFinder
         {
             Invoke(new Action(() =>
             {
+                dataGridViewResults.Rows.Clear();
+
                 foreach (var item in ipMacList)
                 {
                     string macAddress = item.Value;
@@ -299,10 +306,11 @@ namespace DeviceFinder
 
                     if (manufacturer == "Dell Inc.")
                     {
-                        string formattedResult = FormatIpMac(ConvertUintToIp(item.Key), macAddress);
-                        richTextBoxResults.AppendText($"{formattedResult}\n");
+                        string ip = ConvertUintToIp(item.Key);
+                        dataGridViewResults.Rows.Add(ip, macAddress, manufacturer);
+                        
                     }
-                }
+                }                
             }));
         }
 
@@ -374,9 +382,9 @@ namespace DeviceFinder
                 }
                 catch (IOException ex)
                 {
-                    richTextBoxResults.AppendText("Error reading the file: " + ex.Message);
+                    
                 }
             }
-        }
+        }        
     }
 }

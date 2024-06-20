@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.Start = new System.Windows.Forms.Button();
-            this.richTextBoxResults = new System.Windows.Forms.RichTextBox();
             this.textBoxIpInput = new System.Windows.Forms.TextBox();
             this.subnetSelector = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,25 +36,19 @@
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridViewResults = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResults)).BeginInit();
             this.SuspendLayout();
             // 
             // Start
             // 
-            this.Start.Location = new System.Drawing.Point(45, 415);
+            this.Start.Location = new System.Drawing.Point(14, 415);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(75, 23);
             this.Start.TabIndex = 0;
             this.Start.Text = "Start";
             this.Start.UseVisualStyleBackColor = true;
             this.Start.Click += new System.EventHandler(this.Start_Click);
-            // 
-            // richTextBoxResults
-            // 
-            this.richTextBoxResults.Location = new System.Drawing.Point(287, 12);
-            this.richTextBoxResults.Name = "richTextBoxResults";
-            this.richTextBoxResults.Size = new System.Drawing.Size(318, 426);
-            this.richTextBoxResults.TabIndex = 1;
-            this.richTextBoxResults.Text = "";
             // 
             // textBoxIpInput
             // 
@@ -97,7 +90,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(161, 415);
+            this.button1.Location = new System.Drawing.Point(95, 415);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 6;
@@ -111,7 +104,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(12, 163);
+            this.button2.Location = new System.Drawing.Point(12, 78);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 7;
@@ -119,22 +112,38 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.SelectFile_Click);
             // 
+            // dataGridViewResults
+            // 
+            this.dataGridViewResults.AllowUserToAddRows = false;
+            this.dataGridViewResults.AllowUserToDeleteRows = false;
+            this.dataGridViewResults.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridViewResults.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewResults.Location = new System.Drawing.Point(242, 12);
+            this.dataGridViewResults.Name = "dataGridViewResults";
+            this.dataGridViewResults.ReadOnly = true;
+            this.dataGridViewResults.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.dataGridViewResults.Size = new System.Drawing.Size(347, 426);
+            this.dataGridViewResults.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(617, 450);
+            this.ClientSize = new System.Drawing.Size(601, 450);
+            this.Controls.Add(this.dataGridViewResults);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.subnetSelector);
             this.Controls.Add(this.textBoxIpInput);
-            this.Controls.Add(this.richTextBoxResults);
             this.Controls.Add(this.Start);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Device Finder";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewResults)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -143,7 +152,6 @@
         #endregion
 
         private System.Windows.Forms.Button Start;
-        private System.Windows.Forms.RichTextBox richTextBoxResults;
         private System.Windows.Forms.TextBox textBoxIpInput;
         private System.Windows.Forms.ComboBox subnetSelector;
         private System.Windows.Forms.Label label1;
@@ -151,6 +159,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dataGridViewResults;
     }
 }
 
